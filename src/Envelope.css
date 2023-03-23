@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.aniversary {
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.envelope {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #ffbacb;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.envelope::before {
+    content: '';
+    position: absolute;
+    width: 424px;
+    height: 424px;
+    background-color: #ffbacb;
+    transform: rotate(45deg);
+    top: -214px;
+    left: 87px;
+    border-radius: 30px 0 0 0;
+}
+
+.front {
+    position: absolute;
+    border-right: 360px solid #ff94af;
+    border-top: 190px solid transparent;
+    border-bottom: 200px solid transparent;
+    left: 240px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+
+.front::before {
+    position: absolute;
+    content: '';
+    border-left: 600px solid #ff81a1;
+    border-top: 390px solid transparent;
+    left: -239px;
+    top: -190px;
+}
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid darkblue;
+    border-style: dashed;
+}
+
+.aniversary:hover .card {
+    transform: translateY(-290px);
+}
+
+.card .text {
+    font-family: 'Great Vibes', cursive;
+    margin: 30px;
+    height: 90%;
+}
+
+.aniversary .seal{
+    position: absolute;
+    
+}
+
+.aniversary .cats{
+    width: 50px;
+    height: 50px;
+}
+
+.aniversary .container-media{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+.text .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text .message {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}

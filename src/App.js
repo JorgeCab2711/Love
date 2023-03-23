@@ -1,12 +1,14 @@
 import React from "react";
-import LoveLetter from "./LoveLetter";
+import "./App.css";
+import Envelope from "./Envelope";
 
-function App() {
+
+function App () {
   return (
-    <div className="App">
-      <LoveLetter />
+    <div className="app-container">
+      <Envelope></Envelope>
     </div>
   );
-}
+};
 
 export default App;
